@@ -14,11 +14,16 @@ var vertrag:Vertrag = {
 }
 
 class Person implements Vertrag{
-    sayName (){
+    sayName ():void{
         console.log(this.fullname);;
     }
     id: number;
     fullname: string;
+
+    constructor(p_id:number, p_fn:string){
+        this.id = p_id;
+        this.fullname = p_fn;
+    }
 
 }
 

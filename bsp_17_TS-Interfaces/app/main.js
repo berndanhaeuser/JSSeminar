@@ -5,7 +5,9 @@ var vertrag = {
     }
 };
 var Person = (function () {
-    function Person() {
+    function Person(p_id, p_fn) {
+        this.id = p_id;
+        this.fullname = p_fn;
     }
     Person.prototype.sayName = function () {
         console.log(this.fullname);
