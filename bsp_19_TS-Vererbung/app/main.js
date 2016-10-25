@@ -35,4 +35,34 @@ var vorfall = new Vorfall();
 vorfall.id = 4711;
 vorfall.log("sdf");
 console.dir(vorfall);
+//----------------------
+var Kleidung = (function () {
+    function Kleidung(preis) {
+        this.preis = preis;
+    }
+    return Kleidung;
+}());
+var Hemd = (function (_super) {
+    __extends(Hemd, _super);
+    function Hemd(kragenweite, preis) {
+        _super.call(this, preis);
+        this.kragenweite = kragenweite;
+    }
+    Object.defineProperty(Hemd, "farbe", {
+        get: function () {
+            return this._farbe;
+        },
+        set: function (value) {
+            this._farbe = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Hemd._farbe = "Schwarz";
+    return Hemd;
+}(Kleidung));
+var k = new Kleidung(11);
+var h = new Hemd(11, 111);
+console.log(k);
+console.log(h);
 //# sourceMappingURL=main.js.map
