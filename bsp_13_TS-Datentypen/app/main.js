@@ -3,16 +3,11 @@ console.log("13");
 var flag = true;
 // flag = 1;
 console.log(flag);
-var Elefant = (function () {
-    function Elefant() {
-    }
-    return Elefant;
-}());
 var wert1 = 123;
 var apicode = "12dsaf";
 var liste = [2, 45, 455];
 var liste1 = [true, false];
-var liste2 = ["2", 3, new Elefant()];
+var liste2 = ["2", 3];
 var liste3 = ["asdf", "dfdf"];
 var Vertrag;
 (function (Vertrag) {
@@ -25,4 +20,10 @@ var Vertrag;
 var vertrag = Vertrag.Ruhend;
 console.log(vertrag);
 console.log(Vertrag[vertrag]);
+console.dir(Vertrag);
+var veraenderlich = true;
+// var veraenderlich: any[] = [true];
+function f1() { }
+var a = 123;
+a = f1();
 //# sourceMappingURL=main.js.map
